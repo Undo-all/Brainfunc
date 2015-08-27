@@ -65,7 +65,7 @@ compile xs =
     "#define h ;for(;*p!=0;--p)\n" ++
     "#define i ;for(;*p!=0;++p)\n" ++
     "#define j ;(*z[*p])()\n" ++
-    "#define k(n) ;void f##n(){\n" ++
+    "#define k(n) ;void f##n(void){\n" ++
     "#define l(n) ;}z[*p]=f##n\n" ++
     "main(){int m[20000];y z[20000];register int* p=m" ++
     compileExprs 0 (parse xs) ++
